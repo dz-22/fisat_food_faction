@@ -44,7 +44,6 @@ header("location: customer_login.php");
           <div class="navbar-collapse collapse nomar">
             <ul class="nav navbar-nav">
               <li class="active"><a href="index.php">Home</a></li>
-              <li><a href="about_us.php">About Us</a></li>
               <li><a href=<?php if(isset($_SESSION['customer_email']))echo "'logout.php'"; else echo "'customer_login.php'"?>><?php if(isset($_SESSION['customer_email']))echo "Sign Out"; else echo "Sign In"?></a></li>
               <li><a href="full_menu.php">Full Menu</a></li>
             </ul>
